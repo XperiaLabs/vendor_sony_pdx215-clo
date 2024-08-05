@@ -2483,7 +2483,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx215/proprietary/vendor/lib64/vendor.somc.hardware.swiqi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.swiqi@1.0.so
 
 PRODUCT_PACKAGES += \
-    libfastcvopt \
     libta \
     libthermalclient \
     vendor.qti.hardware.fm@1.0 \
@@ -2496,9 +2495,6 @@ PRODUCT_PACKAGES += \
     embms \
     com.android.hotwordenrollment.common.util \
     embmslibrary \
-    vendor.qti.ims.callinfo-V1.0-java \
-    vendor.qti.ims.factory-V2.0-java \
-    vendor.qti.ims.rcsconfig-V1.0-java \
     android.hardware.gnss@2.1-service-qti \
     c2_manifest_vendor \
     manifest_android.hardware.drm@1.3-service.widevine \
