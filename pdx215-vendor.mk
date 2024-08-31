@@ -1016,6 +1016,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx215/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/sony/pdx215/proprietary/vendor/etc/init/init.vendor.wlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.wlan.rc \
     vendor/sony/pdx215/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
+    vendor/sony/pdx215/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/sony/pdx215/proprietary/vendor/etc/init/keymasterd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/keymasterd.rc \
     vendor/sony/pdx215/proprietary/vendor/etc/init/mlog_qmi_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mlog_qmi_service.rc \
     vendor/sony/pdx215/proprietary/vendor/etc/init/mutualex.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mutualex.rc \
@@ -1209,6 +1210,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/kodiak_vertigo_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kodiak_vertigo_lsm6dst_0.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/kodiak_vertigo_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kodiak_vertigo_lsm6dst_1.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_ak991x_0.json \
+    vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_ak991x_0_somc_platform.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_ak991x_0_somc_platform.json \
+    vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_ak991x_0_somc_product.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_ak991x_0_somc_product.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_bmp380_0.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_bu52053nvx_0.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_default_sensors.json \
@@ -1225,6 +1228,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_irq.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_lps22hh_0.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_lsm6dso_0.json \
+    vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_lsm6dso_0_somc_product.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_lsm6dso_0_somc_product.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_lsm6dst_0.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_lsm6dst_1.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_mtp_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_mtp_ak991x_0.json \
@@ -1236,6 +1240,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_qrd_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_qrd_sx932x_0.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_qrd_tmd3702_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_qrd_tmd3702_0.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_shtw2_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_shtw2_0.json \
+    vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_somc_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_somc_default_sensors.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_stk3x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_stk3x3x_0.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx932x_0.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/lahaina_tmd3702_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_tmd3702_0.json \
@@ -1256,6 +1261,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/sns_device_orient.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_device_orient.json \
+    vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/sns_device_orient_somc_platform.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_device_orient_somc_platform.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/sns_direct_channel.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_direct_channel.json \
     vendor/sony/pdx215/proprietary/vendor/etc/sensors/config/sns_distance_bound.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_distance_bound.json \
@@ -1465,7 +1471,14 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx215/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
     vendor/sony/pdx215/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
     vendor/sony/pdx215/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
+    vendor/sony/pdx215/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
+    vendor/sony/pdx215/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
+    vendor/sony/pdx215/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
+    vendor/sony/pdx215/proprietary/vendor/firmware/ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b03 \
+    vendor/sony/pdx215/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
     vendor/sony/pdx215/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
+    vendor/sony/pdx215/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
+    vendor/sony/pdx215/proprietary/vendor/firmware/touch_module_id_0x28.img:$(TARGET_COPY_OUT_VENDOR)/firmware/touch_module_id_0x28.img \
     vendor/sony/pdx215/proprietary/vendor/firmware/tzhdcp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/tzhdcp.b00 \
     vendor/sony/pdx215/proprietary/vendor/firmware/tzhdcp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/tzhdcp.b01 \
     vendor/sony/pdx215/proprietary/vendor/firmware/tzhdcp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/tzhdcp.b02 \
@@ -2759,8 +2772,13 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne.constants-V2.0-java \
     com.quicinc.cne.constants-V2.1-java \
     dpmapi \
+    ims-ext-common \
     embmslibrary \
+    extphonelib \
     qcrilhook \
+    qti-telephony-common \
+    qti-telephony-hidl-wrapper \
+    qti-telephony-utils \
     vendor.qti.hardware.data.cne.internal.api-V1.0-java \
     vendor.qti.hardware.data.cne.internal.constants-V1.0-java \
     vendor.qti.hardware.data.connection-V1.0-java \
@@ -2775,6 +2793,3 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine \
     vendor.qti.gnss@4.0-service \
     vendor.qti.hardware.servicetracker@1.2-service
-
-PRODUCT_PACKAGES += \
-    regdb_regdb_symlink

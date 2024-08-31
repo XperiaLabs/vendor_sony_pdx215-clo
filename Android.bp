@@ -257,6 +257,13 @@ dex_import {
 }
 
 dex_import {
+	name: "ims-ext-common",
+	owner: "sony",
+	jars: ["proprietary/product/framework/ims-ext-common.jar"],
+	product_specific: true,
+}
+
+dex_import {
 	name: "embmslibrary",
 	owner: "sony",
 	jars: ["proprietary/system_ext/framework/embmslibrary.jar"],
@@ -264,9 +271,38 @@ dex_import {
 }
 
 dex_import {
+	name: "extphonelib",
+	owner: "sony",
+	jars: ["proprietary/system_ext/framework/extphonelib.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "qcrilhook",
 	owner: "sony",
 	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
+}
+
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "sony",
+	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-hidl-wrapper",
+	owner: "sony",
+	jars: ["proprietary/system_ext/framework/qti-telephony-hidl-wrapper.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-utils",
+	owner: "sony",
+	jars: ["proprietary/system_ext/framework/qti-telephony-utils.jar"],
 	system_ext_specific: true,
 }
 
@@ -375,11 +411,3 @@ prebuilt_etc_xml {
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
-
-install_symlink {
-	name: "regdb_regdb_symlink",
-	soc_specific: true,
-	installed_location: "firmware/regdb.bin",
-	symlink_target: "/vendor/etc/wifi/regdb.bin",
-}
-
